@@ -1,0 +1,178 @@
+.info-produtos {
+  margin: 70px auto;
+  max-width: 1100px;
+}
+
+.conteudo,
+.imagens {
+  display: flex;
+}
+
+.galeria {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+.galeria img {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.imagem-ativa {
+  width: 500px;
+  height: fit-content;
+  padding: 80px 0;
+}
+
+.detalhes {
+  margin-left: 50px;
+}
+
+.detalhes h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #1b65a6;
+}
+
+.detalhes p {
+  font-size: 2rem;
+  margin-top: 20px;
+  color: #4f7b8c;
+}
+
+.detalhes span {
+  color: #4f7b8c;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+}
+
+.detalhes span a {
+  background: #b2fce4;
+  color: #000000;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 10px;
+}
+
+.classificacao {
+  margin-top: 20px;
+  color: rgb(225 173 0);
+  display: flex;
+  gap: 15px;
+}
+
+.classificacao span {
+  color: #4f7b8c;
+  letter-spacing: 0.1em;
+  font-size: 1rem;
+}
+
+.tamanho-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.tamanho p {
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+}
+
+.tamanho button {
+  border: 1px solid #4f7b8c;
+  border-radius: 20px;
+  padding: 10px 25px;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  font-weight: 100;
+  color: #4f7b8c;
+  cursor: pointer;
+}
+
+.tamanho button:hover {
+  background: #025e73;
+  color: #f1f1f1;
+}
+
+.quantidade {
+  display: flex;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.quantidade h2 {
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.quantidade-input {
+  display: flex;
+  gap: 0;
+  border: 1px solid #4f7b8c;
+  border-radius: 15px;
+}
+
+.quantidade button,
+.quantidade input {
+  width: 50px;
+  height: 50px;
+  border: none;
+  text-align: center;
+}
+
+.quantidade button {
+  cursor: pointer;
+  font-size: 2rem;
+  background: linear-gradient(to right, #77b3d9, #025e73);
+  color: #f1f1f1;
+}
+
+.quantidade button:hover {
+  background: linear-gradient(to right, #025e73, #77b3d9);
+}
+
+.quantidade button:nth-child(1) {
+  border-radius: 15px 0 0 15px;
+}
+
+.quantidade button:nth-child(3) {
+  border-radius: 0 15px 15px 0;
+}
+
+.quantidade input {
+  font-size: 0.9rem;
+}
+
+.quantidade input::-webkit-inner-spin-button,
+.quantidade input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.quantidade input:focus {
+  outline: none;
+}
+
+.add-cart {
+  margin-top: 30px;
+  width: 100%;
+  padding: 15px 0;
+  border-radius: 15px;
+  background: linear-gradient(to right, #77b3d9, #025e73);
+  border: none;
+  color: #f1f1f1;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.add-cart:hover {
+  background: linear-gradient(to right, #025e73, #77b3d9);
+}
