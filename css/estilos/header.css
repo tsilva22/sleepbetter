@@ -22,9 +22,13 @@
   cursor: pointer;
 }
 
+.menu .menu-media {
+  display: none;
+}
+
 .menu {
   display: grid;
-  grid-template-columns: 330px 1fr;
+  grid-template-columns: 330px 1fr 100px;
   align-items: center;
   padding: 30px 50px;
   box-shadow: 0px 4px 14px #00000024;
@@ -57,13 +61,55 @@
 }
 
 .menu .cart {
-  position: absolute;
-  top: 35px;
-  right: 100px;
   font-size: 2rem;
+  border-left: 50px;
   cursor: pointer;
+  margin-left: 50px;
 }
 
 .menu .cart:hover {
   color: #77b3d9;
+}
+
+@media (max-width: 1150px) {
+  .menu ul li a {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .menu ul li a {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 990px) {
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .menu span {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+  }
+  .menu nav {
+    display: none;
+  }
+  .menu .menu-media {
+    display: block;
+    grid-column: 1;
+    border: none;
+    background: transparent;
+    grid-row: 1;
+    font-size: 2rem;
+    text-align: left;
+    color: #1b65a6;
+  }
+  .menu .cart {
+    grid-row: 1;
+    grid-column: 3;
+    margin-left: 0;
+    text-align: right;
+  }
 }

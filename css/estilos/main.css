@@ -1,11 +1,15 @@
 .info-produtos {
   margin: 70px auto;
-  max-width: 1100px;
+  max-width: 1200px;
+}
+.conteudo {
+  display: flex;
+  padding: 0 100px;
 }
 
-.conteudo,
 .imagens {
   display: flex;
+  padding-right: 84px;
 }
 
 .galeria {
@@ -16,20 +20,22 @@
 }
 
 .galeria img {
-  width: 80px;
+  max-width: 80px;
   height: 80px;
   cursor: pointer;
   object-fit: cover;
 }
 
 .imagem-ativa {
-  width: 500px;
+  max-width: 100%;
+  width: 100%;
   height: fit-content;
   padding: 80px 0;
 }
 
 .detalhes {
-  margin-left: 50px;
+  padding-left: 64px;
+  max-width: 50%;
 }
 
 .detalhes h1 {
@@ -175,4 +181,122 @@
 
 .add-cart:hover {
   background: linear-gradient(to right, #025e73, #77b3d9);
+}
+
+.detalhes-texto h3 {
+  margin-top: 50px;
+  font-size: 1rem;
+  font-style: italic;
+  letter-spacing: 0.05em;
+}
+
+.detalhes-texto p {
+  margin-top: 30px;
+  font-size: 0.95rem;
+  line-height: 1.7em;
+  color: rgb(37 37 37);
+  letter-spacing: 0.05em;
+}
+
+.guide-size,
+.guarantee {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  border: 1px solid rgb(89 44 146);
+  padding: 20px 10px;
+  border-radius: 15px;
+  box-shadow: 0px 7px 13px 0px #592c922e;
+}
+
+.guide-size h3,
+.guarantee h3,
+.compare-sleep h3 {
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  width: 100%;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.guide-size img {
+  margin-top: 20px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.guarantee p {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  line-height: 1.7em;
+  color: rgb(37 37 37);
+  letter-spacing: 0.05em;
+}
+
+.compare-sleep {
+  margin-top: 30px;
+}
+
+.table-compare {
+  line-height: 1.5em;
+  letter-spacing: 0.05em;
+  border-collapse: collapse;
+}
+
+.table-compare th {
+  color: #1b65a6;
+}
+
+.table-compare th a:hover {
+  color: #4ea4d9;
+}
+
+.table-compare th,
+.table-compare td {
+  padding: 10px 15px;
+  line-height: 1.5em;
+  border: 1px solid rgb(89 44 146);
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.table-compare th {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.table-compare ion-icon[name="checkbox"] {
+  color: #24d026;
+  font-size: 1.5rem;
+}
+
+.table-compare ion-icon[name="close-circle"] {
+  color: #000000;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .conteudo {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .imagem-ativa {
+    max-width: 100%;
+    width: 100%;
+    height: fit-content;
+    padding: 25px 0;
+  }
+  .detalhes {
+    margin-top: 30px;
+    max-width: 100%;
+    padding: 0;
+  }
+  .add-cart {
+    margin-top: 30px;
+    width: 50%;
+  }
+  .table-compare th,
+  .table-compare td {
+    line-height: 1.25em;
+  }
 }
