@@ -1,10 +1,14 @@
-.info-produtos {
+.info-produtos,
+.how-to-use,
+.need-to-know,
+.vantagens {
   margin: 70px auto;
   max-width: 1200px;
 }
 .conteudo {
   display: flex;
   padding: 0 100px;
+  height: 600px;
 }
 
 .imagens {
@@ -35,11 +39,17 @@
 
 .detalhes {
   padding-left: 64px;
-  max-width: 50%;
+  max-width: 55%;
+  overflow-y: scroll;
 }
 
-.detalhes h1 {
-  font-size: 2.5rem;
+.detalhes::-webkit-scrollbar {
+  width: 18px;
+}
+
+.detalhes h1,
+.how-to-use-conteudo-detalhes h1 {
+  font-size: 2.15rem;
   font-weight: 600;
   letter-spacing: 0.05em;
   color: #1b65a6;
@@ -102,6 +112,11 @@
 }
 
 .tamanho button:hover {
+  background: #025e73;
+  color: #f1f1f1;
+}
+
+.tamanho .ativo {
   background: #025e73;
   color: #f1f1f1;
 }
@@ -190,7 +205,8 @@
   letter-spacing: 0.05em;
 }
 
-.detalhes-texto p {
+.detalhes-texto p,
+.how-to-use-conteudo-detalhes p {
   margin-top: 30px;
   font-size: 0.95rem;
   line-height: 1.7em;
@@ -275,10 +291,168 @@
   font-size: 1.5rem;
 }
 
+.how-to-use-conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 80px;
+  gap: 64px;
+}
+
+.need-to-know-conteudo-container {
+  padding: 0 103px;
+}
+
+.how-to-use-conteudo .video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.how-to-use-conteudo video {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.how-to-use-conteudo-detalhes {
+  max-width: 50%;
+}
+
+.need-to-know-conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+
+.need-to-know-titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.need-to-know-titulo ion-icon {
+  color: #ffffff;
+  font-size: 1.75rem;
+  background: #77b3d9;
+  padding: 10px;
+  width: 25px;
+  height: 35px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.need-to-know-titulo h2 {
+  font-size: 1.875rem;
+  color: #025e73;
+  font-weight: 200;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+
+.need-to-know-titulo h1 {
+  font-size: 2.475rem;
+  color: #025e73;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.need-to-know-conteudo-quadros {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.need-to-know-conteudo-quadros div {
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 77px;
+  padding-bottom: 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 7px 13px 0px #592c922e;
+  border: 1px solid rgb(89 44 146);
+  border-radius: 15px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.need-to-know-conteudo-quadros div img {
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 30px;
+}
+
+.need-to-know-conteudo-quadros div h2 {
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+}
+
+.need-to-know-conteudo-quadros div p {
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  line-height: 1.625em;
+  text-align: center;
+}
+.vantagens-conteudo-itens {
+  display: grid;
+  column-gap: 100px;
+  row-gap: 50px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding: 0 103px;
+  text-align: center;
+}
+
+.vantagens-conteudo-itens div {
+  position: relative;
+}
+
+.vantagens-conteudo-item::before {
+  content: "";
+  position: absolute;
+  background: #025e73;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  top: -11px;
+  left: calc(50% - 60px);
+}
+
+.vantagens-conteudo-item img {
+  margin-bottom: 30px;
+}
+
+.vantagens-conteudo-item h2 {
+  font-size: 1.45rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 30px;
+  color: #025e73;
+}
+
+.vantagens-conteudo-item p {
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  line-height: 1.625em;
+  color: #4f7b8c;
+}
+
+@media (max-width: 1200px) {
+  .vantagens-conteudo-itens {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 1024px) {
   .conteudo {
     display: flex;
     flex-wrap: wrap;
+    height: 100%;
   }
   .imagem-ativa {
     max-width: 100%;
@@ -290,6 +464,7 @@
     margin-top: 30px;
     max-width: 100%;
     padding: 0;
+    display: block;
   }
   .add-cart {
     margin-top: 30px;
@@ -298,6 +473,22 @@
   .table-compare th,
   .table-compare td {
     line-height: 1.25em;
+  }
+  .how-to-use-conteudo {
+    flex-wrap: wrap;
+  }
+  .how-to-use-conteudo-detalhes {
+    max-width: 100%;
+    text-align: center;
+  }
+  .need-to-know-conteudo-quadros {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .need-to-know-conteudo-quadros div {
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 }
 
