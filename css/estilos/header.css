@@ -1,25 +1,25 @@
 .promocao {
   background: #d5e5f2;
   padding: 30px 0;
-  position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .promocao span {
   font-size: 1rem;
   text-transform: uppercase;
+  width: 100%;
   text-align: center;
+  padding-left: 96px;
   color: #1b65a6;
 }
 
 .promocao ion-icon {
-  position: absolute;
-  top: 25px;
-  right: 80px;
   font-size: 1.75rem;
   cursor: pointer;
+  justify-self: right;
+  margin-right: 70px;
 }
 
 .menu .menu-media {
@@ -51,7 +51,7 @@
 
 .menu ul li a {
   color: #3c5061;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
   padding: 30px 0;
 }
@@ -74,6 +74,12 @@
 @media (max-width: 1150px) {
   .menu ul li a {
     font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 1075px) {
+  .menu ul li a {
+    font-size: 0.85rem;
   }
 }
 
@@ -107,9 +113,62 @@
     color: #1b65a6;
   }
   .menu .cart {
+    display: flex;
+    justify-self: right;
     grid-row: 1;
     grid-column: 3;
     margin-left: 0;
-    text-align: right;
+  }
+}
+
+@media (max-width: 760px) {
+  .promocao {
+    padding: 15px 0;
+  }
+  .promocao span {
+    font-size: 0.9rem;
+    padding-left: 66px;
+  }
+  .promocao ion-icon {
+    margin-right: 20px;
+  }
+  .menu span {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 670px) {
+  .promocao span {
+    font-size: 0.8rem;
+    padding-left: 46px;
+  }
+  .menu span {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 590px) {
+  .promocao span {
+    font-size: 0.8rem;
+    padding-left: 26px;
+  }
+  .promocao ion-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+  .menu span {
+    font-size: 1.25rem;
+  }
+  .menu .menu-media {
+    font-size: 1.5rem;
+  }
+  .menu .cart {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .promocao span {
+    font-size: 0.9rem;
   }
 }

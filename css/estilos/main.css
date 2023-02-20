@@ -300,3 +300,37 @@
     line-height: 1.25em;
   }
 }
+
+@media (max-width: 900px) {
+  .imagens {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  .galeria {
+    grid-row: 2;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 760px) {
+  .info-produtos {
+    margin: 30px auto;
+  }
+  .conteudo {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 670px) {
+  .conteudo {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 590px) {
+  .conteudo {
+    padding: 0 10px;
+  }
+}
